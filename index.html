@@ -2,42 +2,97 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeri RC Angga</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeri RC - Angga</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f1;
       margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
       color: #333;
     }
+
+    header {
+      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      margin-top: 30px;
     }
+
     .gallery img, .gallery video {
       max-width: 300px;
       width: 100%;
-      border: 2px solid #ccc;
       border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Galeri RC Angga</h1>
-  <div class="gallery">
-    <img src="2 KEMBAR.jpg" alt="2 Kembar">
-    <img src="CHEROKEE 3.jpg" alt="Cherokee 3">
-    <img src="KAMAR 3.jpg" alt="Kamar 3">
-    <img src="SI KUNING.jpg" alt="Si Kuning">
-    <video src="CHEROKEE.mp4" controls></video>
-    <video src="SIKUNING.mp4" controls></video>
-  </div>
+
+  <header>
+    <h1>Galeri RC Angga</h1>
+    <p>Dokumentasi dan koleksi video serta foto proyek RC (Remote Control)</p>
+  </header>
+
+  <section>
+    <h2>Selamat Datang!</h2>
+    <p>Ini adalah landing page dokumentasi koleksi saya dalam dunia RC. Saya menyimpan berbagai dokumentasi seperti pesawat, mobil, dan eksperimen elektronik berbasis remote control. Silakan lihat-lihat!</p>
+
+    <div class="gallery">
+      <img src="2 KEMBAR.jpg" alt="2 Kembar">
+      <img src="CHEROKEE 3.jpg" alt="Cherokee 3">
+      <img src="KAMAR 3.jpg" alt="Kamar 3">
+      <img src="SI KUNING.jpg" alt="Si Kuning">
+      <video src="CHEROKEE.mp4" controls></video>
+      <video src="SIKUNING.mp4" controls></video>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Angga. Dibuat dengan semangat dan solder panas!
+  </footer>
+
 </body>
 </html>
