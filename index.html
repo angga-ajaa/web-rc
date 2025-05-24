@@ -3,20 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hobi RC Saya</title>
+  <title>Galeri RC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img, .gallery video {
+      max-width: 300px;
+      width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hobi Merakit Pesawat RC</h1>
-  <p>Ini hasil rakitan saya:</p>
-
-  <h2>Gambar</h2>
-  <img src="images/pesawat1.jpg" width="300">
-  <img src="images/pesawat2.jpg" width="300">
-
-  <h2>Video</h2>
-  <video width="320" height="240" controls>
-    <source src="videos/demo.mp4" type="video/mp4">
-    Browser tidak mendukung video.
-  </video>
+  <h1>Galeri RC</h1>
+  <div class="gallery">
+    <img src="2 KEMBAR.jpg" alt="2 Kembar">
+    <img src="CHEROKEE 3.jpg" alt="Cherokee 3">
+    <img src="KAMAR 3.jpg" alt="Kamar 3">
+    <img src="SI KUNING.jpg" alt="Si Kuning">
+    <video src="CHEROKEE.mp4" controls></video>
+    <video src="SIKUNING.mp4" controls></video>
+  </div>
 </body>
 </html>
