@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Galeri RC - Angga</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri Pesawat RC Angga</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #f9f9f9;
       color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      background: linear-gradient(135deg, #0b87ff, #00bcd4);
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -21,7 +21,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
 
     header p {
@@ -32,6 +32,16 @@
     section {
       padding: 40px 20px;
       text-align: center;
+    }
+
+    .judul-garis {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      padding: 10px 0;
+      margin: 30px auto;
+      font-weight: bold;
+      font-size: 1.5em;
+      max-width: 320px;
     }
 
     .gallery {
@@ -54,6 +64,19 @@
       transform: scale(1.05);
     }
 
+    .caption {
+      font-size: 0.95em;
+      margin-top: 8px;
+      color: #555;
+    }
+
+    .textbox {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
     footer {
       background-color: #222;
       color: #aaa;
@@ -72,29 +95,59 @@
 <body>
 
   <header>
-    <h1>Galeri RC Angga</h1>
-    <p>Dokumentasi dan koleksi video serta foto proyek RC (Remote Control)</p>
+    <h1>Galeri Pesawat RC Angga</h1>
+    <p>Dokumentasi Proyek Pesawat RC Buatan Sendiri</p>
   </header>
 
   <section>
-    <h2>Selamat Datang!</h2>
-    <p>Ini adalah landing page dokumentasi koleksi saya dalam dunia RC. Saya menyimpan berbagai dokumentasi pesawat berbasis remote control. Silakan lihat-lihat!</p>
+    <div class="judul-garis">Tentang Saya</div>
+    <div class="textbox">
+      <p>Halo! Saya Cahya Arlang Dwirangga, biasa dipanggil Angga. Saya hobi membuat dan menerbangkan pesawat RC dari bahan ringan seperti styrofoam yang dilapisi lakban. Saya sangat menikmati proses pembuatannya, termasuk saat uji coba terbang.</p>
+    </div>
+  </section>
 
+  <section>
+    <div class="judul-garis">Galeri Gambar</div>
     <div class="gallery">
-      <img src="2 KEMBAR.jpg" alt="2 Kembar">
-      <img src="CHEROKEE 3.jpg" alt="Cherokee 3">
-    <p>↓ ini adalah kamar saya</p>
-      <img src="KAMAR 3.jpg" alt="Kamar 3">
-      <img src="SI KUNING.jpg" alt="Si Kuning">
-    <p>berikut adalah video pesawat saya</p>
-      <video src="CHEROKEE.mp4" controls></video>
-    <p>↓ ini adalah pesawat yang crash</p>
-      <video src="SIKUNING.mp4" controls></video>
+      <div>
+        <img src="2 KEMBAR.jpg" alt="2 Kembar">
+        <div class="caption">Dua pesawat kembar dengan desain simetris</div>
+      </div>
+      <div>
+        <img src="CHEROKEE 3.jpg" alt="Cherokee 3">
+        <div class="caption">Model CHEROKEE buatan sendiri</div>
+      </div>
+      <div>
+        <img src="SI KUNING.jpg" alt="Si Kuning">
+        <div class="caption">Pesawat KUNING saat uji coba sebelum terbang</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="judul-garis">Penyimpanan Pesawat</div>
+    <div class="textbox">
+      <p>Semua pesawat saya simpan di kamar. Ruang kecil ini jadi tempat kerja, tempat menyimpan, sekaligus tempat belajar saya.</p>
+      <img src="KAMAR 3.jpg" alt="Kamar 3" style="max-width: 100%; width: 300px; border-radius: 10px;">
+          </div>
+  </section>
+
+  <section>
+    <div class="judul-garis">Video Uji Coba</div>
+    <div class="gallery">
+      <div>
+        <video src="CHEROKEE.mp4" controls></video>
+        <div class="caption">Penerbangan pertama berhasil stabil namun crash saat pendarata </div>
+      </div>
+      <div>
+        <video src="SIKUNING.mp4" controls></video>
+        <div class="caption">Uji coba kedua mengalami crash menabrak pohon</div>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Angga. Dibuat dengan semangat dan solder panas!
+    &copy; 2025 Angga RC. Semangat belajar, walau kadang pesawat jatuh!
   </footer>
 
 </body>
